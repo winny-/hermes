@@ -1,0 +1,182 @@
+@import "blueprint/typography";
+@import "compass";
+
+$quiet_color: darken(white, 40%);
+
+@include blueprint-typography;
+
+body {
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin icon($image) {
+  @include unstyled-link;
+  display: block;
+
+  padding-left: 55px;
+  background: image-url($image);
+  background-repeat: no-repeat;
+
+  font-size: 25px;
+  clear: both;
+  margin: 10px 0;
+  color: white;
+
+  .sub {
+    @include quiet;
+    font-size: 10px;
+  }
+
+  &:visited {
+    color: white;
+  }
+}
+
+.head {
+  @include linear-gradient(
+    color-stops(lighten(black, 20%) 98%, white), top);
+  overflow: auto;
+  
+  .desc {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+  .icon {
+    width: 500px;
+    height: 300px;
+    float: left;
+    margin: 0 20px 20px 0;
+    overflow: hidden;
+  }
+
+  .title {
+    float: left;
+    width: 300px;
+  }
+
+  h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 90px;
+    margin: 0;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 20px;
+    @include quiet;
+  }
+
+  a {
+    @include unstyled-link;
+    @include transition-property('border, shadow');
+    @include transition-duration(0.5s);
+    @include transition-duration(ease-in);
+    @include border-radius(10px);
+
+    display: block;
+
+    padding-left: 55px;
+    font-size: 25px;
+    clear: both;
+    margin: 10px 0;
+    color: white;
+    border: 1px solid lighten(black, 20%);
+    width: 125px;
+
+    box-shadow: none;
+
+    .sub {
+      @include quiet;
+      font-size: 10px;
+    }
+
+    &:visited {
+      color: white;
+    }
+   
+    &:hover {
+      @include box-shadow(#888, 3px, 3px, 3px);
+      border: 1px solid gray;
+    }
+    
+  }
+
+  .download {
+    background: image-url('download.png') no-repeat;
+  }
+
+  .develop {
+    background: image-url('xcode.png') no-repeat;
+  }
+
+  .info {
+    background: image-url('information.png') no-repeat;
+  }
+}
+
+.main {
+  width: 100%;
+  overflow: auto;
+}
+
+.feature {
+  clear: both;
+  overflow: auto;
+  
+  width: 800px;
+  height: 100px;
+  margin: 10px auto;
+  border: 1px solid #aaa;
+  @include box-shadow(#aaa, 2px, 2px, 2px);
+
+  .name {
+    float: left;
+    width: 230px;
+    font-size: 45px;
+    font-weight: 500;
+    height: 60px;
+    padding: 20px 20px 20px 0;
+    text-align: right;
+
+    @include linear-gradient(color-stops(white, lighten(black, 90%)), top);
+  }
+
+  .info {
+    float: left;
+    overflow: auto;
+    width: 540px;
+    height: 90px;
+    padding: 10px 0 0 10px;
+    font-size: 16px;
+  }
+
+  &.fast {
+    img {
+      overflow: auto;
+      display: block;
+      float: right;
+      clear: both;
+      margin: 10px 0 0 10px;
+    }
+
+    .pusher {
+      float: right;
+      width: 1px;
+      height: 28px;
+    }
+  }
+  
+  &.features {
+    img { margin-left: 30px; }
+  }
+}
+
+footer {
+  margin: 20px auto;
+  text-align: center;
+  width: 900px;
+}
