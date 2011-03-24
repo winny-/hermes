@@ -1,19 +1,25 @@
+@import url(http://fonts.googleapis.com/css?family=Molengo);
+
 @import "blueprint/typography";
 @import "compass";
 
 $quiet_color: darken(white, 40%);
 
-@include blueprint-typography;
-
 body {
   background-repeat: no-repeat;
   padding: 0;
   margin: 0;
+  @include blueprint-typography-body(12px);
+}
+
+@mixin fonts {
+  font-family: 'Molengo', arial, serif;
 }
 
 @mixin icon($image) {
   @include unstyled-link;
   display: block;
+  float: left;
 
   padding-left: 55px;
   background: image-url($image);
@@ -35,10 +41,9 @@ body {
 }
 
 .head {
-  @include linear-gradient(
-    color-stops(lighten(black, 20%) 98%, white), top);
-  overflow: auto;
-  
+  @include linear-gradient(color-stops(lighten(black, 20%) 98%, white), top);
+  height: 225px;
+
   .desc {
     width: 900px;
     margin: 0 auto;
@@ -48,29 +53,35 @@ body {
     width: 500px;
     height: 300px;
     float: left;
-    margin: 0 20px 20px 0;
-    overflow: hidden;
+    margin: 30px 0 0 0;
   }
 
   .title {
     float: left;
-    width: 300px;
   }
 
   h1 {
+    @include fonts;
     color: white;
     font-weight: 900;
-    font-size: 90px;
+    font-size: 95px;
     margin: 0;
+    padding: 0;
+    line-height: 100%;
   }
 
   h2 {
+    @include fonts;
+    color: #c1c271;
     margin: 0;
     font-size: 20px;
-    @include quiet;
+    font-weight: normal;
+    width: 150px;
+    float: left;
   }
 
   a {
+    @include fonts;
     @include unstyled-link;
     @include transition-property('border, shadow');
     @include transition-duration(0.5s);
@@ -81,11 +92,10 @@ body {
 
     padding-left: 55px;
     font-size: 25px;
-    clear: both;
-    margin: 10px 0;
+    margin-bottom: 10px;
     color: white;
     border: 1px solid lighten(black, 20%);
-    width: 125px;
+    float: left;
 
     box-shadow: none;
 
@@ -103,70 +113,73 @@ body {
       border: 1px solid gray;
     }
     
+    &:nth-of-type(odd) {
+      margin-left: 10px;
+    }
+
+    &:nth-of-type(even) {
+      clear: both;
+    }
   }
 
   .download {
     background: image-url('download.png') no-repeat;
+    width: 125px;
   }
 
   .develop {
     background: image-url('xcode.png') no-repeat;
+    width: 100px;
   }
 
   .info {
     background: image-url('information.png') no-repeat;
+    width: 100px;
   }
 }
 
 .main {
-  width: 100%;
   overflow: auto;
 }
 
 .feature {
   clear: both;
   overflow: auto;
-  
-  width: 800px;
+
+  width: 400px;
   height: 100px;
-  margin: 10px auto;
+  margin: 10px 0;
   border: 1px solid #aaa;
   @include box-shadow(#aaa, 2px, 2px, 2px);
 
-  .name {
-    float: left;
-    width: 230px;
-    font-size: 45px;
-    font-weight: 500;
-    height: 60px;
-    padding: 20px 20px 20px 0;
-    text-align: right;
-
-    @include linear-gradient(color-stops(white, lighten(black, 90%)), top);
+  .text {
+    padding: 6px 10px;
+    font-size: 15px;
   }
 
-  .info {
+  .name {
+    @include fonts;
     float: left;
-    overflow: auto;
-    width: 540px;
-    height: 90px;
-    padding: 10px 0 0 10px;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 10px;
+
+    @include linear-gradient(color-stops(lighten(black, 90%), white), top left);
   }
 
   &.fast {
+
     img {
       overflow: auto;
       display: block;
       float: right;
       clear: both;
-      margin: 10px 0 0 10px;
     }
 
     .pusher {
       float: right;
       width: 1px;
-      height: 28px;
+      height: 48px;
     }
   }
   
@@ -176,6 +189,7 @@ body {
 }
 
 footer {
+  clear: both;
   margin: 20px auto;
   text-align: center;
   width: 900px;
