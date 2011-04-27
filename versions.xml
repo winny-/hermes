@@ -9,6 +9,19 @@
     <language>en</language>
 
     <item>
+      <title>Version 1.0.1</title>
+      <sparkle:releaseNotesLink>https://github.com/alexcrichton/hermes/blob/master/CHANGELOG.md</sparkle:releaseNotesLink>
+      <pubDate>Wed, 27 Apr 2011 00:00:09 -0400</pubDate>
+      <enclosure
+        url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.1.zip"
+        sparkle:version="1.0.1"
+        type="application/octet-stream"
+        length="750661"
+        sparkle:dsaSignature="MC0CFQCdpOQWq5/ObxooIsIIPXyGgJDz8gIUT0H3E9fVu5fgGQsTfJVXJqDXdHk="
+      />
+    </item>
+
+    <item>
       <title>Version 0.0.2</title>
       <sparkle:releaseNotesLink>https://github.com/alexcrichton/hermes/blob/master/CHANGELOG.md</sparkle:releaseNotesLink>
       <pubDate>Tue, 26 Apr 2011 23:55:03 -0400</pubDate>
@@ -22,7 +35,7 @@
     </item>
 
     <item>
-      <title>Version 0.0.1</title>
+      <title>Version 1.0.1</title>
       <sparkle:releaseNotesLink>https://github.com/alexcrichton/hermes/blob/master/CHANGELOG.md</sparkle:releaseNotesLink>
       <pubDate>Tue, 26 Apr 2011 21:23:55 -0400</pubDate>
       <enclosure
