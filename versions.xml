@@ -9,41 +9,15 @@
     <language>en</language>
 
     <item>
-      <title>Version 1.0.1</title>
+      <title>Version 1.0.0</title>
       <sparkle:releaseNotesLink>https://github.com/alexcrichton/hermes/blob/master/CHANGELOG.md</sparkle:releaseNotesLink>
-      <pubDate>Wed, 27 Apr 2011 00:00:09 -0400</pubDate>
+      <pubDate>Wed, 27 Apr 2011 00:29:01 -0400</pubDate>
       <enclosure
-        url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.1.zip"
-        sparkle:version="1.0.1"
+        url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.0.zip"
+        sparkle:version="1.0.0"
         type="application/octet-stream"
-        length="750661"
-        sparkle:dsaSignature="MC0CFQCdpOQWq5/ObxooIsIIPXyGgJDz8gIUT0H3E9fVu5fgGQsTfJVXJqDXdHk="
-      />
-    </item>
-
-    <item>
-      <title>Version 0.0.2</title>
-      <sparkle:releaseNotesLink>https://github.com/alexcrichton/hermes/blob/master/CHANGELOG.md</sparkle:releaseNotesLink>
-      <pubDate>Tue, 26 Apr 2011 23:55:03 -0400</pubDate>
-      <enclosure
-        url="https://github.com/downloads/alexcrichton/hermes/Hermes-0.0.2.zip"
-        sparkle:version="0.0.2"
-        type="application/octet-stream"
-        length="750669"
-        sparkle:dsaSignature="MC0CFDoeMkwzZWa7H9nwHhkpx5gkOhZfAhUAkJM7PvtvW9+kTfjyfLc7oxqccVg="
-      />
-    </item>
-
-    <item>
-      <title>Version 1.0.1</title>
-      <sparkle:releaseNotesLink>https://github.com/alexcrichton/hermes/blob/master/CHANGELOG.md</sparkle:releaseNotesLink>
-      <pubDate>Tue, 26 Apr 2011 21:23:55 -0400</pubDate>
-      <enclosure
-        url="https://github.com/downloads/alexcrichton/hermes/Hermes-0.0.1.zip"
-        sparkle:version="0.0.1"
-        type="application/octet-stream"
-        length="750390"
-        sparkle:dsaSignature="MC0CFAOkSzmxDrVa0nvpk8OA5yGn+nOiAhUAi75lml0vuh66X3pRwH2sM8+WjsY="
+        length="750665"
+        sparkle:dsaSignature="MCwCFEgWsKpU+otusWq4KP9dgHjgI2iRAhQZiL9SvZcc1LhOuPcYmU33EFnDIg=="
       />
     </item>
   </channel>
