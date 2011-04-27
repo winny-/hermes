@@ -7,6 +7,18 @@
     <link>http://alexcrichton.com/hermes/versions.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language>
+  <item>
+    <title>Version 1.0.1</title>
+    <sparkle:releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</sparkle:releaseNotesLink>
+    <pubDate>Wed, 27 Apr 2011 13:24:09 -0400</pubDate>
+    <enclosure
+      url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.1.zip"
+      sparkle:version="1.0.1"
+      type="application/octet-stream"
+      length="750892"
+      sparkle:dsaSignature="MCwCFAv3YsG33y13OoZ3l5a28lqqWeRrAhQV3YDN5O7pGE8PSlI/7n9T6Xk/fQ=="
+    />
+  </item>
 
     <item>
       <title>Version 1.0.0</title>
