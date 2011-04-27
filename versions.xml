@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Hermes Changelog</title>
+    <link>http://alexcrichton.com/hermes/versions.xml</link>
+    <description>Most recent changes with links to updates.</description>
+    <language>en</language>
+
+    <item>
+      <title>Version 0.0.1</title>
+      <sparkle:releaseNotesLink>https://github.com/alexcrichton/hermes/blob/master/CHANGELOG.md</sparkle:releaseNotesLink>
+      <pubDate>Tue, 26 Apr 2011 21:23:55 -0400</pubDate>
+      <enclosure
+        url="https://github.com/downloads/alexcrichton/hermes/Hermes-0.0.1.zip"
+        sparkle:version="0.0.1"
+        type="application/octet-stream"
+        length="750390"
+        sparkle:dsaSignature="MC0CFAOkSzmxDrVa0nvpk8OA5yGn+nOiAhUAi75lml0vuh66X3pRwH2sM8+WjsY="
+      />
+    </item>
+  </channel>
+</rss>
