@@ -2,7 +2,7 @@ root = File.expand_path('../../../hermes', __FILE__)
 build_dir = root + '/build/Release'
 
 plist = "#{build_dir}/Hermes.app/Contents/Info"
-version = `defaults read #{plist} CFBundleVersion`.chomp
+version = `defaults read #{plist} CFBundleShortVersionString`.chomp
 
 index = File.expand_path('../../index.html', __FILE__)
 s = File.read(index)
