@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
 # Usage: ruby release.rb version path/to/versions.xml path/to/CHANGELOG.md
 
+require 'rubygems'
+require 'bluecloth'
+
 version           = ARGV[0]
 versions_xml_file = ARGV[1]
 changelog         = ARGV[2]
@@ -21,7 +24,6 @@ if !s.match(/Version #{version}/)
   File.open(versions, 'wb') { |f| f << s }
 end
 
-require 'bluecloth'
 File.open(File.join(html_root, '/changelog.html'), 'wb') { |f|
   f << BlueCloth.new(File.read(changelog)).to_html
 }
