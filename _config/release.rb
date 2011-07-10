@@ -1,16 +1,19 @@
-root = File.expand_path('../../../hermes', __FILE__)
-build_dir = root + '/build/Release'
+#!/usr/bin/env ruby
+# Usage: ruby release.rb version path/to/versions.xml path/to/CHANGELOG.md
 
-plist = "#{build_dir}/Hermes.app/Contents/Info"
-version = `defaults read #{plist} CFBundleShortVersionString`.chomp
+version           = ARGV[0]
+versions_xml_file = ARGV[1]
+changelog         = ARGV[2]
 
-index = File.expand_path('../../index.html', __FILE__)
+html_root = File.expand_path '../..', __FILE__
+
+index = File.join html_root, '/index.html'
 s = File.read(index)
 s = s.gsub(/(class=.download. href.*Hermes-)[\d\.]+(\.zip)/, "\\1#{version}\\2")
 File.open(index, 'wb') { |f| f << s }
 
 versions = File.expand_path('../../versions.xml', __FILE__)
-new_xml = File.read(build_dir + '/versions.xml').gsub("\t", '  ')
+new_xml = File.read(versions_xml_file).gsub("\t", '  ')
 
 s = File.read(versions)
 if !s.match(/Version #{version}/)
@@ -18,6 +21,7 @@ if !s.match(/Version #{version}/)
   File.open(versions, 'wb') { |f| f << s }
 end
 
-s = File.read(root + '/CHANGELOG.md')
 require 'bluecloth'
-File.open('changelog.html', 'wb') { |f| f << BlueCloth.new(s).to_html }
+File.open(File.join(html_root, '/changelog.html'), 'wb') { |f|
+  f << BlueCloth.new(File.read(changelog)).to_html
+}
