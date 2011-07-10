@@ -13,7 +13,8 @@
     <pubDate>Sun, 10 Jul 2011 00:57:34 -0700</pubDate>
     <enclosure
       url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.4.zip"
-      sparkle:version="1.0.4"
+      sparkle:version="40"
+      sparkle:shortVersionString="1.0.4"
       type="application/octet-stream"
       length="782346"
       sparkle:dsaSignature="MCwCFEIud3n+hxAP2jOQqYMAtkqzMm1dAhQB1Vs7EmOAJrY69CDiHNBwd6fudA=="
@@ -26,7 +27,8 @@
     <pubDate>Fri, 29 Apr 2011 15:08:38 -0400</pubDate>
     <enclosure
       url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.3.zip"
-      sparkle:version="1.0.3"
+      sparkle:version="30"
+      sparkle:shortVersionString="1.0.3"
       type="application/octet-stream"
       length="866294"
       sparkle:dsaSignature="MC4CFQCs5bJ95BQlDQYIqAe5O8sR2IG1OgIVAINLjlPuvPxrwzrmEHl0Bi+KvogO"
@@ -39,7 +41,8 @@
     <pubDate>Fri, 29 Apr 2011 14:49:04 -0400</pubDate>
     <enclosure
       url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.2.zip"
-      sparkle:version="1.0.2"
+      sparkle:version="20"
+      sparkle:shortVersionString="1.0.2"
       type="application/octet-stream"
       length="858943"
       sparkle:dsaSignature="MC0CFQCx1+9j5/GDiBKwT22ct2HjP4F22QIUX6j+T824r2gFrg546eY3MnPA9Kk="
@@ -52,7 +55,8 @@
     <pubDate>Wed, 27 Apr 2011 13:24:09 -0400</pubDate>
     <enclosure
       url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.1.zip"
-      sparkle:version="1.0.1"
+      sparkle:version="10"
+      sparkle:shortVersionString="1.0.1"
       type="application/octet-stream"
       length="750892"
       sparkle:dsaSignature="MCwCFAv3YsG33y13OoZ3l5a28lqqWeRrAhQV3YDN5O7pGE8PSlI/7n9T6Xk/fQ=="
@@ -65,7 +69,8 @@
       <pubDate>Wed, 27 Apr 2011 00:29:01 -0400</pubDate>
       <enclosure
         url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.0.zip"
-        sparkle:version="1.0.0"
+        sparkle:version="1"
+        sparkle:shortVersionString="1.0.0"
         type="application/octet-stream"
         length="750665"
         sparkle:dsaSignature="MCwCFEgWsKpU+otusWq4KP9dgHjgI2iRAhQZiL9SvZcc1LhOuPcYmU33EFnDIg=="
