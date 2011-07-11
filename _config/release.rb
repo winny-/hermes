@@ -11,23 +11,23 @@ changelog         = ARGV[2]
 
 html_root = File.expand_path '../..', __FILE__
 
-index = File.join html_root, '/index.html'
+index = File.join html_root, 'index.html'
 s = File.read(index)
 s = s.gsub(/(class=.download. href.*Hermes-)[\d\.]+(\.zip)/, "\\1#{version}\\2")
 File.open(index, 'wb') { |f| f << s }
 
 versions = File.expand_path('../../versions.xml', __FILE__)
-new_xml = Nokogiri::XML(File.read(versions_xml_file).gsub("\t", '  ')).root
+new_xml = File.read(versions_xml_file).gsub("\t", '  ')
 
 s = Nokogiri::XML File.read(versions)
 has_item = s.css('item title').any? do |node|
   if node.content == "Version #{version}"
-    node.parent.replace(new_xml)
+    node.parent.replace s.fragment(new_xml)
   end
 end
 
 if !has_item
-  s.css('language').add_next_sibling new_xml
+  s.css('language').add_next_sibling s.fragment(new_xml)
 end
 File.open(versions, 'wb') { |f| f << s.to_xhtml(:indent => 2) }
 
