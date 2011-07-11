@@ -6,9 +6,9 @@
     <language>en</language>
   <item>
 <title>Version 1.0.4</title>
-<releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</releaseNotesLink>
+<sparkle:releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</sparkle:releaseNotesLink>
 <pubDate>Mon, 11 Jul 2011 10:38:29 -0700</pubDate>
-<enclosure url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.4.zip" version="40" shortVersionString="1.0.4" type="application/octet-stream" length="782366" dsaSignature="MC0CFEt7p2QB4pirJ75SKRuxyaeJeF+PAhUApWQHS+asWnwJOAzMsHlt/w5dQuU="></enclosure>
+<enclosure url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.4.zip" sparkle:version="40" sparkle:shortVersionString="1.0.4" type="application/octet-stream" length="782366" sparkle:dsaSignature="MC0CFEt7p2QB4pirJ75SKRuxyaeJeF+PAhUApWQHS+asWnwJOAzMsHlt/w5dQuU="></enclosure>
 </item>
 
   <item>
