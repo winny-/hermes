@@ -2,7 +2,7 @@
 # Usage: ruby release.rb version path/to/versions.xml path/to/CHANGELOG.md
 
 require 'rubygems'
-require 'bluecloth'
+require 'redcarpet'
 
 version           = ARGV[0]
 versions_xml_file = ARGV[1]
@@ -25,5 +25,5 @@ if !s.match(/Version #{version}/)
 end
 
 File.open(File.join(html_root, '/changelog.html'), 'wb') { |f|
-  f << BlueCloth.new(File.read(changelog)).to_html
+  f << Redcarpet.new(File.read(changelog)).to_html
 }
