@@ -27,7 +27,7 @@ has_item = s.css('item title').any? do |node|
 end
 
 if !has_item
-  s.css('language').add_next_sibling s.fragment(new_xml)
+  s.css('language').first.add_next_sibling s.fragment(new_xml)
 end
 File.open(versions, 'wb') { |f| f << s.to_xhtml(:indent => 2) }
 
