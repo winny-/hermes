@@ -53,7 +53,7 @@ body {
     width: 500px;
     height: 300px;
     float: left;
-    margin: 30px 0 0 0;
+    margin: 10px 0 0 0;
   }
 
   .title {
@@ -107,12 +107,12 @@ body {
     &:visited {
       color: white;
     }
-   
+
     &:hover {
       @include box-shadow(#888, 3px, 3px, 3px);
       border: 1px solid gray;
     }
-    
+
     &:nth-of-type(odd) {
       margin-left: 10px;
     }
@@ -182,7 +182,7 @@ body {
       height: 48px;
     }
   }
-  
+
   &.features {
     img { margin-left: 30px; }
   }
