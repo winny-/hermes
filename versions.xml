@@ -4,12 +4,22 @@
     <link>http://alexcrichton.com/hermes/versions.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language><item>
+
+<title>Version 1.0.11</title>
+<sparkle:releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</sparkle:releaseNotesLink>
+<sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
+<pubDate>Wed, 16 Nov 2011 12:51:46 -0500</pubDate>
+<enclosure url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.11.zip" sparkle:version="110" sparkle:shortVersionString="1.0.11" type="application/octet-stream" length="819824" sparkle:dsaSignature="MCwCFEmwyya9zGXhYFeSOzPrmFBryX8NAhRiR3oe8FrygXmh3mfgRaUU1Q6vDg=="></enclosure>
+</item>
+
+<item>
 <title>Version 1.0.10</title>
 <sparkle:releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
-<pubDate>Wed, 09 Nov 2011 13:32:57 -0500</pubDate>
-<enclosure url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.10.zip" sparkle:version="100" sparkle:shortVersionString="1.0.10" type="application/octet-stream" length="938726" sparkle:dsaSignature="MC0CFQCIptjRk0V9UJvxbD1AJBR/XrgF9wIUHvkcHZj+ZnkVkfVPHG6ewM7EeYk="></enclosure>
+<pubDate>Tue, 15 Nov 2011 01:20:02 -0500</pubDate>
+<enclosure url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.10.zip" sparkle:version="100" sparkle:shortVersionString="1.0.10" type="application/octet-stream" length="938164" sparkle:dsaSignature="MC4CFQCUloA0Q+S5Y01y91SYNGjvGeePTQIVAJ8K5kicKoxVN+AxJFs9Hfkav2V6"></enclosure>
 </item>
+
 <item>
 <title>Version 1.0.9</title>
 <sparkle:releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</sparkle:releaseNotesLink>
@@ -17,6 +27,7 @@
 <pubDate>Wed, 09 Nov 2011 11:24:12 -0500</pubDate>
 <enclosure url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.9.zip" sparkle:version="90" sparkle:shortVersionString="1.0.9" type="application/octet-stream" length="938327" sparkle:dsaSignature="MCwCFH31OAId68eQCqENiN97YFu/4qItAhQU2qN/Izf8Z+MGzPsXspniez03Yg=="></enclosure>
 </item>
+
 <item>
 <title>Version 1.0.8</title>
 <sparkle:releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</sparkle:releaseNotesLink>
@@ -24,6 +35,7 @@
 <pubDate>Mon, 31 Oct 2011 20:03:58 -0400</pubDate>
 <enclosure url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.8.zip" sparkle:version="80" sparkle:shortVersionString="1.0.8" type="application/octet-stream" length="938254" sparkle:dsaSignature="MCwCFFv3LQHq1AybIHCk+br4WaIJ68klAhQe37iOedG1fnC3l+eCMvrd3vdPig=="></enclosure>
 </item>
+
 <item>
 <title>Version 1.0.7</title>
 <sparkle:releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</sparkle:releaseNotesLink>
@@ -39,6 +51,7 @@
 <pubDate>Wed, 21 Sep 2011 23:46:01 -0400</pubDate>
 <enclosure url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.6.zip" sparkle:version="60" sparkle:shortVersionString="1.0.6" type="application/octet-stream" length="782267" sparkle:dsaSignature="MCwCFGfTQIeWi9mm721yIHi60zUlxwthAhQIyHupATVuVhdebHu0rk4262wHyQ=="></enclosure>
 </item>
+
 <item>
 <title>Version 1.0.5</title>
 <sparkle:releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</sparkle:releaseNotesLink>
