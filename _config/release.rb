@@ -5,6 +5,8 @@ require 'rubygems'
 require 'redcarpet'
 require 'nokogiri'
 
+include Redcarpet
+
 version           = ARGV[0]
 versions_xml_file = ARGV[1]
 changelog         = ARGV[2]
@@ -32,5 +34,5 @@ end
 File.open(versions, 'wb') { |f| f << s.to_xhtml(:indent => 2) }
 
 File.open(File.join(html_root, '/changelog.html'), 'wb') { |f|
-  f << Redcarpet.new(File.read(changelog)).to_html
+  f << Markdown.new(Render::HTML).render(File.read(changelog))
 }
