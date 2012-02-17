@@ -4,6 +4,14 @@
     <link>http://alexcrichton.com/hermes/versions.xml</link>
     <description>Most recent changes with links to updates.</description>
     <language>en</language><item>
+<title>Version 1.0.19</title>
+<sparkle:releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</sparkle:releaseNotesLink>
+<sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
+<pubDate>Fri, 17 Feb 2012 16:16:51 -0500</pubDate>
+<enclosure url="https://github.com/downloads/alexcrichton/hermes/Hermes-1.0.19.zip" sparkle:version="190" sparkle:shortVersionString="1.0.19" type="application/octet-stream" length="824877" sparkle:dsaSignature="MC0CFQCwmaNC3asYBUmDDbc0Weq5X2UaRgIUOjBJieOL/M+Qiqz2tDRr6g16C3A="></enclosure>
+</item>
+
+<item>
 <title>Version 1.0.18</title>
 <sparkle:releaseNotesLink>http://alexcrichton.com/hermes/changelog.html</sparkle:releaseNotesLink>
 <sparkle:minimumSystemVersion>10.7</sparkle:minimumSystemVersion>
