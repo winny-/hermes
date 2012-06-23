@@ -41,7 +41,8 @@ body {
 }
 
 .head {
-  @include linear-gradient(color-stops(lighten(black, 20%) 98%, white), top);
+  @include background-image(
+    linear-gradient(top, lighten(black, 20%) 98%, white));
   height: 225px;
 
   .desc {
@@ -109,7 +110,7 @@ body {
     }
 
     &:hover {
-      @include box-shadow(#888, 3px, 3px, 3px);
+      @include box-shadow(#888 3px 3px 3px);
       border: 1px solid gray;
     }
 
@@ -150,7 +151,7 @@ body {
   height: 100px;
   margin: 10px 0;
   border: 1px solid #aaa;
-  @include box-shadow(#aaa, 2px, 2px, 2px);
+  @include box-shadow(#aaa 2px 2px 2px);
 
   .text {
     padding: 6px 10px;
@@ -164,7 +165,8 @@ body {
     font-weight: 500;
     padding: 5px 20px 5px 10px;
 
-    @include linear-gradient(color-stops(lighten(black, 90%), white), top left);
+    @include background-image(
+        linear-gradient(top left, lighten(black, 90%), white));
   }
 
   &.fast {
@@ -186,6 +188,12 @@ body {
   &.features {
     img { margin-left: 30px; }
   }
+}
+
+.thanks {
+  width: 500px;
+  margin: 20px;
+  font-size: 140%;
 }
 
 footer {
