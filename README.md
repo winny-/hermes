@@ -1,6 +1,8 @@
 Hermes
 ======
 
+[![Build Status](https://travis-ci.org/winny-/hermes.svg?branch=master)](https://travis-ci.org/winny-/hermes)
+
 A [Pandora](http://www.pandora.com) client for OS X.
 
 ### Develop against Hermes
